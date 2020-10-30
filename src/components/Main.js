@@ -18,8 +18,9 @@ const styles = (theme) => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    background: 'url(background.jpg) no-repeat',
+    background: 'url(house_wc_full.png) no-repeat',
     backgroundSize: 'cover',
+    backgroundPosition: 'center bottom',
   },
   grid: {
     marginTop: 10,
@@ -29,38 +30,41 @@ const styles = (theme) => ({
     },
   },
   paperMain: {
-    minHeight: '60vh',
+    minHeight: '50vh',
     width: '100%',
     textAlign: 'left',
     color: theme.palette.text.secondary,
     display: 'flex',
-    backgroundColor: 'rgba(0, 0, 0, .1)',
+    backgroundColor: 'rgba(0, 0, 0, .5)',
   },
   paper: {
     minHeight: 20,
     textAlign: 'left',
     color: theme.palette.secondary.dark,
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 0, .4)',
+    backgroundColor: 'rgba(0, 0, 0, .5)',
   },
   paperDark: {
     minHeight: 20,
     textAlign: 'left',
     color: theme.palette.text.secondary,
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 0, .8)',
+    backgroundColor: 'rgba(0, 0, 0, .9)',
   },
   mainTitle: {
     color: 'white',
   },
   title: {
     color: theme.palette.secondary.light,
+    fontWeight: 'bold',
   },
   titleDark: {
     color: theme.palette.secondary.dark,
+    fontWeight: 'bold',
   },
   titleLight: {
     color: theme.palette.primary.light,
+    fontWeight: 'bold',
   },
   rangeLabel: {
     display: 'flex',
@@ -172,19 +176,16 @@ class Main extends Component {
             <Grid item xs={12}>
               <Paper className={classes.paperDark}>
                 <div className={classes.box}>
-                  <Typography variant="h6" className={classes.title} gutterBottom>
-                    Lorem Ipsum
+                  <Typography variant="h3" className={classes.title} gutterBottom>
+                    Welcome
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom color="primary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                             commodo
-                                 consequat.
+                    Welcome to the homepage of the Alpha Alpha Chapter of Beta Theta Pi at
+                    Columbia University in the City of New York.
                   </Typography>
                 </div>
                 <div className={classes.buttonBar}>
-                  <Button color="secondary" variant="contained" className={classes.actionButton} component={Link} to="about">
+                  <Button color="secondary" variant="contained" className={classes.actionButton} component={Link} to="foundation">
                              Foundation
                   </Button>
                 </div>
@@ -194,12 +195,11 @@ class Main extends Component {
               <Paper className={classes.paper}>
                 <div className={classes.box}>
                   <Typography
-                    variant="h6"
+                    variant="h3"
                     className={classes.titleLight}
                     gutterBottom
                   >
-Duis aute
-                             irure
+                    2020 Capital Campaign
                   </Typography>
                   <Typography variant="body1" gutterBottom color="primary">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu

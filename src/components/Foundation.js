@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import Footer from './Footer';
 import Topbar from './Topbar';
@@ -18,11 +18,14 @@ numeral.defaultFormat('0,000');
 const styles = (theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.grey['100'],
     overflow: 'hidden',
+    background: 'url(seal_wc.png) no-repeat',
+    backgroundPosition: 'center',
+    backgroundColor: theme.palette.grey['100'],
     backgroundSize: 'cover',
-    backgroundPosition: '0 400px',
-    paddingBottom: 400,
+    // backgroundPosition: '0 400px',
+    paddingBottom: 500,
+    minHeight: 670,
   },
   grid: {
     margin: `0 ${theme.spacing(2)}px`,
@@ -56,7 +59,7 @@ const styles = (theme) => ({
 });
 
 
-class AboutUs extends Component {
+class Foundation extends Component {
   componentDidMount() {}
 
   render() {
@@ -73,14 +76,8 @@ class AboutUs extends Component {
               <Grid item xs={12}>
                 <div className={classes.topBar}>
                   <div className={classes.block}>
-                    <Typography variant="h6" gutterBottom>About Us</Typography>
-                    <Typography variant="body1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                             commodo consequat
-                                 .
-                    </Typography>
+                    <Typography variant="h6" gutterBottom>Alpha Alpha Alumni Foundation</Typography>
+                    {/* <Typography variant="body1"></Typography> */}
                   </div>
                 </div>
               </Grid>
@@ -93,17 +90,8 @@ class AboutUs extends Component {
                 <Grid item xs={12}>
                   <div className={classes.topBar}>
                     <div>
-                      <Button
-                        variant="outlined"
-                        component={Link}
-                        to="/signup"
-                        className={classes.outlinedButtom}
-                      >
-Sign
-                             Up
-                      </Button>
                       <Button variant="outlined" className={classes.outlinedButtom}>
-                        Email us
+                        Countact
                       </Button>
                     </div>
                   </div>
@@ -118,9 +106,9 @@ Sign
   }
 }
 
-AboutUs.propTypes = {
+Foundation.propTypes = {
   classes: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
 };
 
-export default withRouter(withStyles(styles)(AboutUs));
+export default withRouter(withStyles(styles)(Foundation));

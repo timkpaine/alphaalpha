@@ -4,19 +4,17 @@ const Menu = [
     pathname: '/',
   },
   {
-    label: 'About Us',
-    pathname: '/about',
+    label: 'Foundation',
+    pathname: '/foundation',
   },
   {
-    label: 'Contact',
-    pathname: '/contact',
+    label: 'Champions',
+    pathname: '/champions',
   },
   // {
-  //   label: "Github",
-  //   pathname: "https://github.com/alexanmtz/material-sense",
-  //   external: true
-  // }
-
+  //   label: 'Contact',
+  //   pathname: '/contact',
+  // },
 ];
 
 export default Menu;

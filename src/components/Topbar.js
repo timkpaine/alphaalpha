@@ -92,10 +92,10 @@ class Topbar extends Component {
     if (currentPath === '/home') {
       return 0;
     }
-    if (currentPath === '/about') {
+    if (currentPath === '/foundation') {
       return 1;
     }
-    if (currentPath === '/club') {
+    if (currentPath === '/champions') {
       return 2;
     }
     if (currentPath === '/signup') {
