@@ -1,3 +1,3 @@
 # alphaalpha
 
-[![Build Status](https://travis-ci.org/timkpaine/alphaalpha.svg?branch=master)](https://travis-ci.org/timkpaine/alphaalpha)
+[![Build Status](https://github.com/timkpaine/alphaalpha/workflows/Node.js%20CI/badge.svg)](https://github.com/timkpaine/alphaalpha/actions/)
