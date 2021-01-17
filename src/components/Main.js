@@ -1,7 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/no-unused-state */
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { Button, CssBaseline } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -186,7 +185,7 @@ class Main extends Component {
                 </div>
                 <div className={classes.buttonBar}>
                   <Button color="secondary" variant="contained" className={classes.actionButton} component={Link} to="foundation">
-                             Foundation
+                    Foundation
                   </Button>
                 </div>
               </Paper>
@@ -203,8 +202,8 @@ class Main extends Component {
                   </Typography>
                   <Typography variant="body1" gutterBottom color="primary">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                     culpa qui officia deserunt mollit anim id est laborum.
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                   </Typography>
                 </div>
                 <div className={classes.buttonBar}>

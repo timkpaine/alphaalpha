@@ -22,6 +22,13 @@ module.exports = {
   plugins: [
     'react',
   ],
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+  },
   rules: {
     'react/jsx-filename-extension': [1, {'extensions': ['.js', '.jsx']}],
     'max-len': [

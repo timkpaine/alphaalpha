@@ -1,5 +1,5 @@
 /* eslint-disable react/forbid-prop-types */
-import Button from '@material-ui/core/Button';
+import { Button } from '@material-ui/core';
 import withStyles from '@material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -25,14 +25,14 @@ const ButtonBar = (props) => {
       <Button
         className={classes.primary}
       >
-          Delete
+        Delete
       </Button>
       <Button
         variant="contained"
         color="primary"
         className={classes.secondary}
       >
-          Edit
+        Edit
       </Button>
     </div>
   );

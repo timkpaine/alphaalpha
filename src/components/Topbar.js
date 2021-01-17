@@ -1,6 +1,5 @@
 /* eslint-disable react/forbid-prop-types */
-import { Link as MaterialLink } from '@material-ui/core';
-import AppBar from '@material-ui/core/AppBar';
+import { AppBar, Link as MaterialLink } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
@@ -78,7 +77,6 @@ class Topbar extends Component {
     this.setState({ value });
   };
 
-
   mobileMenuOpen = () => {
     this.setState({ menuDrawer: true });
   }
@@ -125,7 +123,7 @@ class Topbar extends Component {
                 <>
                   <div className={classes.productLogo}>
                     <Typography>
-                          NYC
+                      NYC
                     </Typography>
                   </div>
                   <div className={classes.iconContainer}>

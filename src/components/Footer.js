@@ -49,7 +49,7 @@ const Footer = (props) => {
             {
         /* <img width={20} src={logo} alt="" /> */}
             <span>
-        ΒΘΠ - ΑΑ
+              ΒΘΠ - ΑΑ
             </span>
           </Link>
         </Typography>

@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
-import Button from '@material-ui/core/Button';
+import { Button } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
