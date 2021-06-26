@@ -8,7 +8,6 @@ import Main from './components/Main';
 // import Signup from './components/Signup';
 import ScrollToTop from './components/ScrollTop';
 
-
 export default (props) => (
   <HashRouter>
     <ScrollToTop>

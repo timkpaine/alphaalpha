@@ -1,10 +1,9 @@
 import './App.css';
 
 // import {blueGrey} from '@material-ui/core/colors'
-import { createMuiTheme } from '@material-ui/core/styles';
-import { responsiveFontSizes } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import React, { Component } from 'react';
+import React from 'react';
 
 import Routes from './routes';
 
@@ -23,17 +22,12 @@ const theme = responsiveFontSizes(createMuiTheme({
   },
 }));
 
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <ThemeProvider theme={theme}>
-          <Routes />
-        </ThemeProvider>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <ThemeProvider theme={theme}>
+      <Routes />
+    </ThemeProvider>
+  </div>
+);
 
 export default App;
